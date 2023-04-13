@@ -34,17 +34,54 @@ export default function Home() {
           </li>
           <li>
             <Link
+              href="https://app.mps.gov.cn/gdnps/zc/content.jsp?id=8282962"
+              passHref
+              legacyBehavior
+            >
+              <a target="_blank" rel="noreferrer">
+                机动车登记规定
+              </a>
+            </Link>
+            （自2022年5月1日起施行）
+          </li>
+
+          <li>
+            <Link
               href="https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE3YWIyMzFlYjAxN2FiZDYxN2VmNzA1MTk%3D"
               passHref
               legacyBehavior
             >
               <a target="_blank" rel="noreferrer">
-              中华人民共和国道路交通安全法
+                道路交通安全法
               </a>
             </Link>
             （自2021年4月29日起施行）
           </li>
-          
+          <li>
+            <Link
+              href="https://flk.npc.gov.cn/detail2.html?ZmY4MDgwODE2ZjNjYmIzYzAxNmY0MGY1NjZjMTBlMjM%3D"
+              passHref
+              legacyBehavior
+            >
+              <a target="_blank" rel="noreferrer">
+                道路交通安全法实施条例
+              </a>
+            </Link>
+            （自2004年5月1日起施行）
+          </li>
+
+          <li>
+            <Link
+              href="https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE3OTZhNjM2YTAxNzk4MjJhMTk2NDBjOTI%3D"
+              passHref
+              legacyBehavior
+            >
+              <a target="_blank" rel="noreferrer">
+                刑法
+              </a>
+            </Link>
+            （2020年12月26日通过修正案）
+          </li>
         </ul>
       </section>
       <section>
@@ -166,6 +203,47 @@ export default function Home() {
           <li>驾驶机动车在道路上行驶时，机动车驾驶人未按规定系安全带的</li>
           <li>驾驶摩托车，不戴安全头盔的</li>
         </ol>
+      </section>
+      <section>
+        <h2 className={styles.h2}>驾驶证种类（准驾车型）</h2>
+        <h3 className={styles.h3}>C类</h3>
+        <ul className={styles.list}>
+          <li>C1 小型汽车(C2,C3,C4)</li>
+          <li>C2 小型自动挡汽车</li>
+          <li>C3 低速载货汽车</li>
+          <li>C4 三轮汽车</li>
+          <li>C5 残疾人专用小型自动挡载客汽车</li>
+          <li>C6 轻型牵引挂车</li>
+        </ul>
+        <h3 className={styles.h3}>A类</h3>
+        <ul className={styles.list}>
+          <li>A1 大型客车，准驾大型载客汽车(A3,B1,B2,C1,C2,C3,C4,M)</li>
+          <li>
+            A2 重型牵引挂车，准驾总质量大于4500kg的汽车列车(B1,B2,C1-4,C6,M)
+          </li>
+        </ul>
+        <h3 className={styles.h3}>B类</h3>
+        <ul className={styles.list}>
+          <li>
+            B1
+            中型客车，准驾中型载客汽车（含核载10人以上、19人以下的城市公共汽车）(C1-4,M)
+          </li>
+          <li>
+            B2 大型货车，准驾重型、中型载货汽车，重型、中型专项作业车(C1-4,M)
+          </li>
+        </ul>
+        <h3 className={styles.h3}>其他类</h3>
+        <ul className={styles.list}>
+          <li>D 发动机排量大于50ml的三轮摩托车</li>
+          <li>E 发动机排量大于50ml的二轮摩托车</li>
+          <li>F 发动机排量小于等于50ml的摩托车</li>
+          <li>M 轮式自行机械车</li>
+          <li>N 无轨电车</li>
+          <li>P 有轨电车</li>
+        </ul>
+      </section>
+      <section>
+        <h2 className={styles.h2}>罚款</h2>
       </section>
     </main>
   );
