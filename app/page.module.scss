@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+.title {
+  // padding: 20px;
+}
+
+.h2 {
+  margin-block: 20px;
+}
+
+.h3 {
+  margin-block: 15px;
+
+}
+
+.list {
+  padding: 2rem 3rem;
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+
+  li {
+    margin-block: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 1.5rem;
+  }
+  .list {
+    padding: 2rem;
+  }
+}
