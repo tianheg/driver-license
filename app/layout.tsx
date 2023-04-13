@@ -1,4 +1,4 @@
-import './globals.css'
+import './globals.scss'
 
 export const metadata = {
   title: '考驾照',
