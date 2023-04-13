@@ -10,7 +10,7 @@ export default function Home() {
         <ul>
           <li>
             <Link
-              href="http://www.gov.cn/gongbao/content/2022/content_5679697.htm"
+              href="https://app.mps.gov.cn/gdnps/zc/content.jsp?id=8282949"
               passHref
               legacyBehavior
             >
@@ -20,6 +20,31 @@ export default function Home() {
             </Link>
             （自2022年4月1日起施行）
           </li>
+          <li>
+            <Link
+              href="https://app.mps.gov.cn/gdnps/zc/content.jsp?id=8282932"
+              passHref
+              legacyBehavior
+            >
+              <a target="_blank" rel="noreferrer">
+                机动车驾驶证申领和使用规定
+              </a>
+            </Link>
+            （自2022年4月1日起施行）
+          </li>
+          <li>
+            <Link
+              href="https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE3YWIyMzFlYjAxN2FiZDYxN2VmNzA1MTk%3D"
+              passHref
+              legacyBehavior
+            >
+              <a target="_blank" rel="noreferrer">
+              中华人民共和国道路交通安全法
+              </a>
+            </Link>
+            （自2021年4月29日起施行）
+          </li>
+          
         </ul>
       </section>
       <section>
