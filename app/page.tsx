@@ -1,10 +1,27 @@
+import Link from 'next/link';
 import styles from './page.module.scss';
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>中国交通知识</h1>
-      <p>资料来源：“驾考宝典”APP</p>
+      <section className={styles.references}>
+        <p>资料来源：</p>
+        <ul>
+          <li>
+            <Link
+              href="http://www.gov.cn/gongbao/content/2022/content_5679697.htm"
+              passHref
+              legacyBehavior
+            >
+              <a target="_blank" rel="noreferrer">
+                道路交通安全违法行为记分管理办法
+              </a>
+            </Link>
+            （自2022年4月1日起施行）
+          </li>
+        </ul>
+      </section>
       <section>
         <h2 className={styles.h2}>扣分</h2>
         <h3 className={styles.h3}>12分</h3>
