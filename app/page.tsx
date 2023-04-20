@@ -86,7 +86,24 @@ export default function Home() {
         </ul>
       </section>
       <section className={styles.section}>
-        <h2 className={styles.h2}>扣分</h2>
+        <h2 className={styles.h2}>目录</h2>
+        <ul className={styles.tocList}>
+          <li><a href="#notes">笔记</a></li>
+          <li><a href="#deduct-points">扣分</a></li>
+          <li><a href="#licenses">驾驶证种类</a></li>
+          <li><a href="#be-fined">罚款</a></li>
+        </ul>
+      </section>
+      <section className={styles.section}>
+        <h2 id="notes" className={styles.h2}>笔记</h2>
+        <ul className={styles.list}>
+          {data['笔记'].map((item) => (
+            <li key={item.id}>{item.content}</li>
+          ))}
+        </ul>
+      </section>
+      <section className={styles.section}>
+        <h2 id="deduct-points" className={styles.h2}>扣分</h2>
         <h3 className={styles.h3}>12分</h3>
         <ol className={styles.list}>
           {data['扣分']['12'].map((item) => (
@@ -119,7 +136,7 @@ export default function Home() {
         </ol>
       </section>
       <section className={styles.section}>
-        <h2 className={styles.h2}>驾驶证种类（准驾车型）</h2>
+        <h2 id="licenses" className={styles.h2}>驾驶证种类（准驾车型）</h2>
         <h3 className={styles.h3}>C类</h3>
         <ul className={styles.list}>
           {data['种类']['C'].map((item) => (
@@ -146,7 +163,12 @@ export default function Home() {
         </ul>
       </section>
       <section className={styles.section}>
-        <h2 className={styles.h2}>罚款</h2>
+        <h2 id="be-fined" className={styles.h2}>罚款</h2>
+        <ul className={styles.list}>
+          {data['罚款'].map((item) => (
+            <li key={item.id}>{item.content}</li>
+          ))}
+        </ul>
       </section>
     </main>
   );
