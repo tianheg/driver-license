@@ -50,10 +50,11 @@
     text-align: center;
     line-height: 50px;
     margin: 0 10px;
-
-    background-color: aquamarine;
+    border: 2px solid gainsboro;
 
     border-radius: 10px;
+
+    color: rgb(var(--foreground-rgb));
   }
 
   a {
